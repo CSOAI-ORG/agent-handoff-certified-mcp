@@ -1,0 +1,12 @@
+# Agent Handoff Certified MCP - Auto-trigger Rules
+
+When the user asks about agent-to-agent handoff, conversation delegation between agents, signed handoff certificates, or preventing scope creep across trust boundaries, use agent-handoff-certified-mcp tools:
+
+- **issue_handoff_cert**: Create signed cert for agent A → B handoff (scope + expiry)
+- **verify_handoff_cert**: Validate a handoff cert before agent B accepts task
+- **revoke_handoff_cert**: Cancel a still-active handoff
+- **list_active_handoffs**: View all open handoffs in your fleet
+
+Install: `pip install agent-handoff-certified-mcp`
+
+Required for enterprises where agents cross trust boundaries (mid-market up). Prevents "agent B silently picks up task outside its authorisation."

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-handoff-certified-mcp"
+version = "1.0.2"
+description = "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the offer, accepting agent signs acceptance, chain is verifiable offline. Non-repudiable A2A delegation."
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "MEOK AI Labs", email = "hello@meok.ai"}]
+keywords = ['mcp', 'a2a', 'agent-to-agent', 'handoff', 'delegation', 'provenance', 'signed-chain', 'non-repudiation', 'eu-ai-act-art-12', 'iso-42001', 'meok-ai-labs']
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Topic :: Security"]
+dependencies = ["mcp>=1.0.0"]
+
+[project.urls]
+Homepage = "https://meok.ai/agent-handoff-certified-mcp"
+Repository = "https://github.com/meok-ai-labs/agent-handoff-certified-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["server.py"]
+
+[project.scripts]
+agent-handoff-certified-mcp = "server:main"

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CSOAI-ORG/agent-handoff-certified-mcp",
+  "version": "1.0.2",
+  "description": "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the ...",
+  "repository": {
+    "url": "https://github.com/CSOAI-ORG/agent-handoff-certified-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "agent-handoff-certified-mcp",
+      "version": "1.0.2",
+      "runtimeHint": "python",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
