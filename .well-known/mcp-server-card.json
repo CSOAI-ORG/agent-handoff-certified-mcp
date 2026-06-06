@@ -1,0 +1,28 @@
+{
+  "name": "agent-handoff-certified-mcp",
+  "title": "Agent Handoff Certified Mcp",
+  "description": "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the offer, accepting agent signs acceptance, chain is verifiable offline. Non-repudiable A2A delegation.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "initiate_handoff"
+    },
+    {
+      "name": "accept_handoff"
+    },
+    {
+      "name": "verify_chain"
+    },
+    {
+      "name": "list_handoffs"
+    },
+    {
+      "name": "sign_handoff_chain_attestation"
+    }
+  ]
+}

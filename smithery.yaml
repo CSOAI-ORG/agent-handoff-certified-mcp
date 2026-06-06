@@ -1,0 +1,29 @@
+name: agent-handoff-certified-mcp
+description: 'MCP server: agent-handoff-certified-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/agent-handoff-certified-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: initiate_handoff
+  description: Initiating agent offers a task. Returns handoff_id + signed offer.
+- name: accept_handoff
+  description: Receiving agent accepts + signs. Completes the chain.
+- name: verify_chain
+  description: Re-verify the handoff signatures. Returns full trace + integrity status.
+- name: list_handoffs
+  description: List handoffs for a tenant, optionally filtered by status.
+- name: sign_handoff_chain_attestation
+  description: Emit a signed attestation of the handoff chain integrity for a window.
+    Pro+.
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'

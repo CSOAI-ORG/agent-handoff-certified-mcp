@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "agent-handoff-certified-mcp"
-version = "1.0.2"
+version = "1.0.6"
 description = "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the offer, accepting agent signs acceptance, chain is verifiable offline. Non-repudiable A2A delegation."
 license = {file = "LICENSE"}
 readme = "README.md"
@@ -16,7 +16,7 @@ dependencies = ["mcp>=1.0.0"]
 
 [project.urls]
 Homepage = "https://meok.ai/agent-handoff-certified-mcp"
-Repository = "https://github.com/meok-ai-labs/agent-handoff-certified-mcp"
+Repository = "https://github.com/CSOAI-ORG/agent-handoff-certified-mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]
