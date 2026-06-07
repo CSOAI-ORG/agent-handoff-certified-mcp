@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "agent-handoff-certified-mcp",
+    "description": "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the ...",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "agent-handoff-certified-mcp"
+      }
+    ],
+    "capabilities": [
+      "initiate_handoff",
+      "accept_handoff",
+      "verify_chain",
+      "list_handoffs",
+      "sign_handoff_chain_attestation"
+    ]
+  }
+}

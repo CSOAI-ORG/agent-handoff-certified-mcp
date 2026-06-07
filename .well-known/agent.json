@@ -1,0 +1,68 @@
+{
+  "name": "agent-handoff-certified-mcp",
+  "description": "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the ...",
+  "url": "https://proofof.ai/scorecard/agent-handoff-certified-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "initiate_handoff",
+      "name": "Initiate Handoff",
+      "description": "initiate_handoff via agent-handoff-certified-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "accept_handoff",
+      "name": "Accept Handoff",
+      "description": "accept_handoff via agent-handoff-certified-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "verify_chain",
+      "name": "Verify Chain",
+      "description": "verify_chain via agent-handoff-certified-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_handoffs",
+      "name": "List Handoffs",
+      "description": "list_handoffs via agent-handoff-certified-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_handoff_chain_attestation",
+      "name": "Sign Handoff Chain Attestation",
+      "description": "sign_handoff_chain_attestation via agent-handoff-certified-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
