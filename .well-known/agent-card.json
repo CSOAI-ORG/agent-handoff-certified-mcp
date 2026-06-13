@@ -1,0 +1,117 @@
+{
+  "name": "Agent Handoff Certified Mcp",
+  "version": "1.0.6",
+  "url": "https://mcp.meok.ai/agent-handoff-certified-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the offer, accepting agent signs acceptance, chain is verifiable offline. Non-repudiable A2A delegation.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "initiate_handoff",
+      "name": "Initiate Handoff",
+      "description": "Initiate Handoff — a tool of the agent-handoff-certified-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "accept_handoff",
+      "name": "Accept Handoff",
+      "description": "Accept Handoff — a tool of the agent-handoff-certified-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "verify_chain",
+      "name": "Verify Chain",
+      "description": "Verify Chain — a tool of the agent-handoff-certified-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_handoffs",
+      "name": "List Handoffs",
+      "description": "List Handoffs — a tool of the agent-handoff-certified-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_handoff_chain_attestation",
+      "name": "Sign Handoff Chain Attestation",
+      "description": "Sign Handoff Chain Attestation — a tool of the agent-handoff-certified-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "agent-handoff-certified-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}

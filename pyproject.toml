@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "agent-handoff-certified-mcp"
-version = "1.0.8"
+version = "1.0.9"
 description = "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the offer, accepting agent signs acceptance, chain is verifiable offline. Non-repudiable A2A delegation."
 license = {file = "LICENSE"}
 readme = "README.md"
