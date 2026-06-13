@@ -5,7 +5,8 @@
   "description": "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the ...",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/agent-handoff-certified-mcp",
-    "source": "github"
+    "source": "github",
+    "id": "1238513279"
   },
   "packages": [
     {
