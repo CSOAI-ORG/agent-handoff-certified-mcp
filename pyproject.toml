@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "agent-handoff-certified-mcp"
-version = "1.0.9"
+version = "1.0.10"
 description = "Verifiable agent-to-agent task handoff with signed provenance chain. Initiating agent signs the offer, accepting agent signs acceptance, chain is verifiable offline. Non-repudiable A2A delegation."
 license = {file = "LICENSE"}
 readme = "README.md"
@@ -24,3 +24,22 @@ only-include = ["server.py"]
 
 [project.scripts]
 agent-handoff-certified-mcp = "server:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]
+
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_Configs = true
+disallow_untyped_defs = true
+
