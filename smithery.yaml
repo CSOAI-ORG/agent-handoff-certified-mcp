@@ -3,7 +3,7 @@ description: 'MCP server: agent-handoff-certified-mcp'
 version: 1.0.5
 author: MEOK AI Labs
 homepage: https://safetyof.ai
-repository: https://github.com/MEOK-AI-Labs/agent-handoff-certified-mcp
+repository: https://github.com/CSOAI-ORG/agent-handoff-certified-mcp
 license: MIT
 categories:
 - compliance
